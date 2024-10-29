@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/516f629e15.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .navi{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    width:100%;
+    z-index: 1;
+    background-color:white;
+    box-shadow: 1px 1px 5px 0px black;
+    position: fixed;
+}
+
+.navi a{
+    text-decoration: none;
+    color:black;
+    padding: 1.4em;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+.navi-1{
+    padding: 0.8em;
+    font-size: 0.8em;
+    color: black;
+    text-align: center;
+
+
+}
+.navi-2{
+    text-align: center;
+    padding-top: 15px;
+    
+}
+.navi-3{
+    text-align: center;
+    padding-top: 15px;
+
+}
+.navi a:hover{
+    border-radius: 10px;
+    font-size: 1.2em;
+    color:pink;
+}
+.box{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    background-color: rgb(239, 238, 238);
+    height: 4em;
+    align-content: center;
+    font-size: 2em;
+}
+.box1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    background-color: rgba(243, 184, 204, 0.863);
+    font-size: 1.3em;
+    height: 2em;
+    align-content: center;
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.604);
+    border-radius: 40px;
+}
+.foot{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+.foot button{
+    padding: 1em;
+    width:20%;
+    background-color:black;
+    border: none;
+    border-radius: 1em;
+    font-size: 0.7em;
+    color: white;
+}
+.foot button:hover{
+    background-color: pink;
+    cursor: pointer;
+
+}
+@media (width<=600px){
+    body{
+        width:600px;
+    }
+    .foot button{
+        padding: 0.6em;
+        width:50%;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="navi">
+        <div class="navi-1">
+        <h1>LUMIN</h1>
+        </div>
+        <div class="navi-2">
+            <a href="index.html"><i class="fa-solid fa-house"></i> HOME</a>
+            </div>
+        <div class="navi-3">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <div class="foot">
+        <br>
+        <img src="pics/return.png" height="100px">
+        <h3>Oops! There is nothing in your cart</h3>
+        <br>
+        <p>Explore around to add items to your shopping cart</p>
+        <br>
+        <a href="index.html"><button>Return To Shop</button></a>
+
+    </div>
+    <br><br><br><br><br><br>
+</body>
+</html>
